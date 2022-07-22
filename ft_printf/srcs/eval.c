@@ -6,7 +6,7 @@
 /*   By: angassin <angassin@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:29:30 by angassin          #+#    #+#             */
-/*   Updated: 2022/07/13 21:06:38 by angassin         ###   ########.fr       */
+/*   Updated: 2022/07/21 17:09:20 by angassin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,6 @@ static int	eval_spec(t_print *print_struct, const char specifier)
 
 /*
 	Returns the index of the specifier in the conversion array
-	and 
 */
 static int	index_spec(const char *specifiers, char c)
 {

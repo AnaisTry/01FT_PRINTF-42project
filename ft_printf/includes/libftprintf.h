@@ -6,7 +6,7 @@
 /*   By: angassin <angassin@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 14:25:14 by angassin          #+#    #+#             */
-/*   Updated: 2022/07/15 16:02:33 by angassin         ###   ########.fr       */
+/*   Updated: 2022/07/22 10:50:29 by angassin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,14 +65,16 @@ void		spec_percent(t_print *ps);
 void		spec_d(t_print *ps);
 void		spec_i(t_print *ps);
 
-//print_unsigned
-void		spec_p(t_print *ps);
+//print_unsigned.c
 void		spec_u(t_print *ps);
 void		spec_x(t_print *ps);
 void		spec_upper_x(t_print *ps);
+void		unbr_left_padding(t_print *ps, int nb_len, unsigned int nb);
+
+//print_address.c
+void		spec_p(t_print *ps);
 
 //padding.c
 void		padding(t_print *print_struct, int nb_len);
 void		number_zero_padding(t_print *print_struct, int nb_len);
-void		unbr_left_padding(t_print *ps, int nb_len);
 #endif

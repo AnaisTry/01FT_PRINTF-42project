@@ -6,7 +6,7 @@
 /*   By: angassin <angassin@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/12 15:34:10 by angassin          #+#    #+#             */
-/*   Updated: 2022/07/12 19:33:14 by angassin         ###   ########.fr       */
+/*   Updated: 2022/07/22 07:41:21 by angassin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ void	spec_c(t_print *print_struct)
 	char	c;
 
 	c = va_arg(print_struct->args, int);
+	if (print_struct->dot && print_struct->zero)
+		print_struct->dot = 0;
 	if (print_struct->width && !print_struct->minus)
 		padding(print_struct, 1);
 	print_struct->len += ft_putchar_fd(c, 1);
@@ -81,6 +83,8 @@ void	spec_s(t_print	*print_struct)
 */
 void	spec_percent(t_print *ps)
 {
+	if (ps->dot && ps->zero)
+		ps->dot = 0;
 	if (ps->width && !ps->minus)
 		padding(ps, 1);
 	ps->len += ft_putchar_fd('%', 1);
