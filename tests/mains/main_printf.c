@@ -224,27 +224,121 @@
 // // // 	// system("leaks a.out");
 // }
 
-// // #define ARGS	"ddsvdsvds%l------\n"
+// // #define FORMAT	"ddsvdsvds%l------\n"
 
-// #define ARGS	"%70p\n", 0 
-// #define ARGS	"%.5p\n", 0
-// #define ARGS	"%-10.5c\n", 'c'
-// #define ARGS "%#043X\n", 3
-// #define ARGS "|%#x|\n", 0
-// #define ARGS	"%+d\n", 5 
-// #define ARGS	"%.5p\n", 0
-// // #define ARGS	"%-10.5c\n", 'c' 
-// #define ARGS	"%#0.10p\n", 5
-// #define ARGS	"%5p\n", 0
-// #define ARGS " %-2p \n", 1
-#define ARGS "%.u\n", 0
-// #define ARGS "%08.2x\n", 8
-// #define ARGS " %#x ", 0
-// #define ARGS " %#x %#x %#x %#x %#x %#x %#x", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42
-
+// #define FORMAT	"%70p\n", 0 
+// #define FORMAT	"%.5p\n", 0
+// #define FORMAT	"%-10.5c\n", 'c'
+// #define FORMAT "%#043X\n", 3
+// #define FORMAT "|%#x|\n", 0
+// #define FORMAT	"%+d\n", 5 
+// #define FORMAT	"%.5p\n", 0
+// // #define FORMAT	"%-10.5c\n", 'c' 
+// #define FORMAT	"%#0.10p\n", 5
+// #define FORMAT	"%5p\n", 0
+// #define FORMAT " %-2p \n", 1
+// #define FORMAT "%.u\n", 0
+// #define FORMAT "%08.2x\n", 8
+// #define FORMAT " %#x \n", 0
+// #define FORMAT " %#x %#x %#x %#x %#x %#x %#x\n", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42
+// #define FORMAT "%#7x\n", 33
+// #define FORMAT "|%#3x|\n", 0
+// #define FORMAT "% .5d\n", 33
+// #define FORMAT "% 3d\n", 0
+// #define FORMAT "% -7d\n", 33
+// #define FORMAT "% .5d\n", 2
+// #define FORMAT "% .6d\n", -3
+// #define FORMAT "% 8.5d\n", 34
+// #define FORMAT "%#8.5x\n", 34
+// #define FORMAT "%#8.5x\n", 0
+// #define FORMAT "%+.7d\n", 234
+// #define FORMAT "%+5d\n", 35
+// #define FORMAT "%+05d\n", 432
+// #define FORMAT "%#05x\n", 432
+// #define FORMAT "%+.0d\n", 0
+// #define FORMAT "%.4d\n", 5263
+// #define FORMAT "%+-8.5d", 34
+// #define FORMAT "%0+8.5d", 34
+// #define FORMAT	"%70p\n", 0 
+// #define FORMAT	"%.5p\n", 0
+// #define FORMAT	"%-10.5c\n", 'c'
+// #define FORMAT "%#043X\n", 3
+// #define FORMAT "|%#x|\n", 0
+// #define FORMAT	"%+d\n", 5 
+// #define FORMAT	"%.5p\n", 0
+// #define FORMAT	"%-10.5c\n", 'c' 
+// #define FORMAT	"%#0.10p\n", 5
+// #define FORMAT	"%5p\n", 0
+// #define FORMAT " %-2p \n", 1
+// #define FORMAT "%.u\n", 0
+// #define FORMAT "%08.2x\n", 8
+// #define FORMAT " %#x \n", 0
+// #define FORMAT " %#x %#x %#x %#x %#x %#x %#x\n", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42
+// #define FORMAT "%#7x\n", 33
+// #define FORMAT "|%#3x|\n", 0
+// #define FORMAT "% .5d\n", 33
+// #define FORMAT "% 3d\n", 0
+// #define FORMAT "% -7d\n", 33
+// #define FORMAT "% .5d\n", 2
+// #define FORMAT "% .6d\n", -3
+// #define FORMAT "% 8.5d\n", 34
+// #define FORMAT "%#8.5x\n", 34
+// #define FORMAT "%#8.5x\n", 0
+// #define FORMAT "%#8.3x\n", 8375
+// #define FORMAT "%+.7d\n", 234
+// #define FORMAT "%+5d\n", 35
+// #define FORMAT "%+05d\n", 432
+// #define FORMAT "%#08.5x\n", 432
+// #define FORMAT "%-+4.7d\n", 32
+// #define FORMAT "%.4d\n", 5263
+// #define FORMAT "%0+8.5d\n", 34
+// #define FORMAT "%0+10.5d\n", -216
+// #define FORMAT "%0+3.7d\n", 3267
+// #define FORMAT "%0+-3.3d\n", -8462
+// #define FORMAT "%0+-8.5d\n", 34
+// #define FORMAT "% +-8.3d\n", 8375
+// #define FORMAT "% 0+-8.3d\n", 8375
+//  #define FORMAT "% 0+-3.3d\n", -8462
+//  #define FORMAT "%#0-8.5x", 34
+//  #define FORMAT "%#-5x\n", 52625
+//  #define FORMAT "%%-d 42 == %-d\n", INT_MIN
+// #define FORMAT "%%04i 42 == |%04i|\n", 42
+//  #define FORMAT "%%x Lydie == |%x|\n", 'L'+'y'+'d'+'i'+'e'
+//  #define FORMAT "Kashim a %ld histoires à raconter\n", 1001
+// #define FORMAT "%% 4.5i 42 == |% 4.5i|\n", 42
+// #define FORMAT "%%#X INT_MIN ==  %#X\n", INT_MIN
+// #define FORMAT ""
+// #define FORMAT
+// #define FORMAT
+// #define FORMAT "%#7.3x\n", 8375
+// #define FORMAT "%#8.3x\n", 8375
+//  #define FORMAT "this %d number\n", 0
+// #define FORMAT "%+-2.d\n", 0
+// #define FORMAT "%.3d\n", 0
+// #define FORMAT "%+-5.0i\n", 0
+// #define FORMAT "%#7x", 33
+// #define "%#-8.5x", 0
+// #define "%#-2.7x", 3267
+// #define "%#0-8.5x", 34
+// #define "%#0-8.3x", 8375
+// #define FORMAT "%-.3i\n", -10
+// #define FORMAT "%-7.5d|\n", -5
+// #define FORMAT "%-8.4d", -5
+// #define FORMAT "%-10.d", -1
+// #define FORMAT "%d\n", (int)-2147483648
+// #define FORMAT "%5.p\n", NULL
+// #define FORMAT "%p\n", NULL
+// #define FORMAT "-->|%-16.p|<-- ", NULL
+//#define FORMAT "%-10.u|\n", 5
+// #define FORMAT "%20.5d", -1025
+// #define FORMAT "%10c%0036.99%" ,9
+// #define FORMAT "%03.c", 'c'
+// #define FORMAT "%10c" ,9
+static int ncm_p = 10;
+#define FORMAT "%.p", &ncm_p
 int	main(void)
 {
-	printf("Yours: %d\n", ft_printf(ARGS));// 
-	printf("Origi: %d\n", printf(ARGS));
+	printf("Yours: %d\n", ft_printf(FORMAT));
+	printf("Origi: %d\n", printf(FORMAT));
 	return (0);
 }
