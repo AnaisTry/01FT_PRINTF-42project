@@ -25,6 +25,6 @@ void	ft_put_unbr_base_fd(unsigned long n, char *base, int fd)
 		ft_put_unbr_base_fd(n / base_len, base, fd);
 		ft_put_unbr_base_fd(n % base_len, base, fd);
 	}
-	if (n >= 0 && n < base_len)
+	if (n < base_len)
 		ft_putchar_fd(base[n], fd);
 }
