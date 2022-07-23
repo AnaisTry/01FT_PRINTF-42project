@@ -15,7 +15,7 @@ and padding functions.
 
 Thanks to Alienxbe, baltsaros and Aspinaut for the help in debugging.
 
-Thanks to the students who wrotes testers.
+Thanks to the students who wrote testers.
 
 Testers :
 
